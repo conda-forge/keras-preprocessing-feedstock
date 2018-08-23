@@ -9,10 +9,13 @@ package:
 source:
   url: https://github.com/keras-team/{{ name }}/archive/{{ version }}.tar.gz
   sha256: {{ sha256 }}
+  patches:
+    - 0001-correct-version-number.patch
+
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
