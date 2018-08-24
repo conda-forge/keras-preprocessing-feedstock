@@ -1,0 +1,25 @@
+From 2b0c4c8c61e1ce1af69b6682e16479c02f61a88f Mon Sep 17 00:00:00 2001
+From: Jonathan Helmus <jjhelmus@gmail.com>
+Date: Wed, 22 Aug 2018 16:10:23 -0500
+Subject: [PATCH] correct version number
+
+---
+ setup.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/setup.py b/setup.py
+index 2f7dac9..a728fdb 100644
+--- a/setup.py
++++ b/setup.py
+@@ -21,7 +21,7 @@ and is distributed under the MIT license.
+ '''
+ 
+ setup(name='Keras_Preprocessing',
+-      version='1.0.1',
++      version='1.0.2',
+       description='Easy data preprocessing and data augmentation '
+                   'for deep learning models',
+       long_description=long_description,
+-- 
+2.7.4
+
