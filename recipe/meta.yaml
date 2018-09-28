@@ -1,6 +1,6 @@
 {% set name = "Keras-Preprocessing" %}
-{% set version = "1.0.2" %}
-{% set sha256 = "64212b715a435b43724ecf26be67a441cee426e3ef614a6326aba06016ba9779" %}
+{% set version = "1.0.4" %}
+{% set sha256 = "9f36ffeab4545f039880d6eaf8f8b3a6c8eba14618cec25c60d69a281398e5ea" %}
 
 package:
   name: {{ name|lower }}
@@ -15,7 +15,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
