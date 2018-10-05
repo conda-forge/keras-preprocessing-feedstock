@@ -1,6 +1,6 @@
 {% set name = "Keras-Preprocessing" %}
-{% set version = "1.0.2" %}
-{% set sha256 = "64212b715a435b43724ecf26be67a441cee426e3ef614a6326aba06016ba9779" %}
+{% set version = "1.0.3" %}
+{% set sha256 = "7a7da86eaae0cadfd83e644741898d1edbd6819631ff0ee36fd130bd9efd814e" %}
 
 package:
   name: {{ name|lower }}
@@ -9,13 +9,10 @@ package:
 source:
   url: https://github.com/keras-team/{{ name }}/archive/{{ version }}.tar.gz
   sha256: {{ sha256 }}
-  patches:
-    - 0001-correct-version-number.patch
-
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
