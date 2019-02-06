@@ -1,6 +1,6 @@
 {% set name = "Keras-Preprocessing" %}
-{% set version = "1.0.5" %}
-{% set sha256 = "8a1d20d8dd2204d82616648f1b40615ea9f5ff0f8f94fdc6d9fe3c2238476c89" %}
+{% set version = "1.0.9" %}
+{% set sha256 = "045a9b3faf4f6d63493cc3ca396659cc0395727b280c988fb9b6c7ff8157f09b" %}
 
 package:
   name: {{ name|lower }}
