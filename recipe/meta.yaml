@@ -12,7 +12,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
@@ -21,10 +21,12 @@ requirements:
     - pip
   run:
     - python
-    - keras >=2.1.6
     - numpy >=1.9.1
     - scipy >=0.14
     - six >=1.9.0
+  # avoid a direct requirement on keras to prevent a circular dependency
+  run_constrained:
+    - keras >=2.1.6
 
 test:
   imports:
