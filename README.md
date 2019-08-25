@@ -1,7 +1,3 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About keras-preprocessing
 =========================
 
@@ -21,8 +17,17 @@ with image data, text data, and sequence data.
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/keras-preprocessing-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/keras-preprocessing-feedstock)
+
+<table><tr>
+    
+    <td>All platforms:</td>
+    <td>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3069&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/keras-preprocessing-feedstock?branchName=master">
+      </a>
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
