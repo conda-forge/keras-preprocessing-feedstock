@@ -124,5 +124,5 @@ Feedstock Maintainers
 =====================
 
 * [@CurtLH](https://github.com/CurtLH/)
-* [@jjhelmus](https://github.com/jjhelmus/)
+* [@h-vetinari](https://github.com/h-vetinari/)
 
