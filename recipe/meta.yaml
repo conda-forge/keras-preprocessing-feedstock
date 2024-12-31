@@ -7,20 +7,20 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/K/Keras-Preprocessing/Keras_Preprocessing-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/K/Keras-Preprocessing/Keras_Preprocessing-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
   noarch: python
-  number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 1
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - numpy >=1.9.1
     - scipy >=0.14
     - six >=1.9.0
@@ -29,6 +29,8 @@ requirements:
     - keras >=2.1.6
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - keras_preprocessing
 
